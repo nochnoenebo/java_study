@@ -6,6 +6,7 @@ public class Point {
     public double x2;
     public double y1;
     public double y2;
+    double Power=2;
 
 
     public  Point(double x1, double x2, double y1, double y2) {
@@ -17,7 +18,7 @@ public class Point {
     }
 
     public double area() {
-        return Math.sqrt((this.x1 + this.x2)*(this.y1 + this.y2)*(this.x1 + this.x2)*(this.y1 + this.y2));
+        return Math.sqrt((Math.pow((this.x2 - this.x1), Power))*(Math.pow((this.y2 - this.y1), Power)));
 
     }
 
